@@ -1,0 +1,4472 @@
+object FrmComanda: TFrmComanda
+  Size.Width = 800.000000000000000000
+  Size.Height = 400.000000000000000000
+  Size.PlatformDefault = False
+  object retFrmComanda: TRectangle
+    Align = Contents
+    Fill.Color = claWhite
+    Size.Width = 800.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    object retStatusComanda: TRectangle
+      Align = Left
+      Fill.Color = claGreen
+      Size.Width = 6.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+    end
+    object retComponentesFrmComanda: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 794.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object retBotoes: TRectangle
+        Align = Right
+        Fill.Color = claWhite
+        Position.X = 537.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 400.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object GridPanelLayout1: TGridPanelLayout
+          Align = Client
+          Size.Width = 256.000000000000000000
+          Size.Height = 400.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 50.000000000000020000
+            end
+            item
+              Value = 49.999999999999980000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = btnConferenciaDetalhada
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = btnConferenciaResumida
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = btnPagamento
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = btnPagamentoParcial
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = btnImprimeCozinhaBar
+              Row = 2
+            end
+            item
+              Column = 1
+              Control = btnTransferenciaMesa
+              Row = 2
+            end
+            item
+              Column = 0
+              Control = btnDesbloquearMesa
+              Row = 3
+            end
+            item
+              Column = 1
+              Control = btnIndicador
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = btnCancelarMesa
+              Row = 4
+            end
+            item
+              Column = 1
+              Control = btnRetiraTaxaServico
+              Row = 4
+            end
+            item
+              Column = 0
+              Control = btnAlteraInformacoesMesa
+              Row = 5
+            end
+            item
+              Column = 1
+              Control = btnRecarregaInformacoes
+              Row = 5
+            end
+            item
+              Column = 0
+              Control = btnInformacoesMesa
+              Row = 6
+            end
+            item
+              Column = 1
+              Control = btnItensComanda
+              Row = 6
+            end>
+          RowCollection = <
+            item
+              Value = 14.285853287068490000
+            end
+            item
+              Value = 14.285786843713910000
+            end
+            item
+              Value = 14.285728331996940000
+            end
+            item
+              Value = 14.285681346397760000
+            end
+            item
+              Value = 14.285650293703260000
+            end
+            item
+              Value = 14.285640663290800000
+            end
+            item
+              Value = 14.285659233828850000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object btnConferenciaDetalhada: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.143413543701170000
+            Size.PlatformDefault = False
+            TabOrder = 13
+            Text = 'Confer'#234'ncia Detalhada'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnConferenciaDetalhadaClick
+          end
+          object btnConferenciaResumida: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.143413543701170000
+            Size.PlatformDefault = False
+            TabOrder = 12
+            Text = 'Confer'#234'ncia Resumida'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnConferenciaResumidaClick
+          end
+          object btnPagamento: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.143142700195310000
+            Size.PlatformDefault = False
+            TabOrder = 11
+            Text = 'Pagamento'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnPagamentoClick
+          end
+          object btnPagamentoParcial: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.143142700195310000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Pagamento Parcial'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnPagamentoParcialClick
+          end
+          object btnImprimeCozinhaBar: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142913818359380000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Imprimir Cozinha/Bar'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnImprimeCozinhaBarClick
+          end
+          object btnTransferenciaMesa: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142913818359380000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Transfer'#234'ncia de Mesa'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnTransferenciaMesaClick
+          end
+          object btnDesbloquearMesa: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142730712890630000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            Text = 'Desbloquear Mesa'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnDesbloquearMesaClick
+          end
+          object btnIndicador: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142730712890630000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            Text = 'Indicador'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnIndicadorClick
+          end
+          object btnCancelarMesa: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142608642578130000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            Text = 'Cancelar Mesa'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnCancelarMesaClick
+          end
+          object btnRetiraTaxaServico: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142608642578130000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            Text = 'Retirar Taxa Servi'#231'o'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnRetiraTaxaServicoClick
+          end
+          object btnAlteraInformacoesMesa: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142547607421880000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            Text = 'Alterar Informa'#231#245'es'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnAlteraInformacoesMesaClick
+          end
+          object btnRecarregaInformacoes: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142547607421880000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Text = 'Recarregar Informa'#231#245'es'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnRecarregaInformacoesClick
+          end
+          object btnInformacoesMesa: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142639160156250000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Informa'#231#245'es da Mesa'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnInformacoesMesaClick
+          end
+          object btnItensComanda: TCornerButton
+            Align = Client
+            Margins.Left = 8.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 112.000000000000000000
+            Size.Height = 41.142639160156250000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Itens Comanda'
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnItensComandaClick
+          end
+        end
+        object Line1: TLine
+          Align = Left
+          LineType = Diagonal
+          Size.Width = 1.000000000000000000
+          Size.Height = 400.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Rectangle3: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Size.Width = 257.000000000000000000
+          Size.Height = 81.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claWhite
+          Visible = False
+        end
+      end
+      object retSecoesProdutosItensComanda: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Size.Width = 537.000000000000000000
+        Size.Height = 400.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object retLocalSecaoProdutos: TRectangle
+          Align = Client
+          Fill.Color = claWhite
+          Size.Width = 537.000000000000000000
+          Size.Height = 152.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claWhite
+          object retProdutos: TRectangle
+            Align = Client
+            Fill.Color = claWhite
+            Size.Width = 537.000000000000000000
+            Size.Height = 72.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claWhite
+            object vRetProdutos: TVertScrollBox
+              Align = Client
+              Size.Width = 537.000000000000000000
+              Size.Height = 72.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Viewport.Width = 521.000000000000000000
+              Viewport.Height = 72.000000000000000000
+              object retSeparadorProdutos: TRectangle
+                Fill.Color = claWhite
+                Position.X = 272.000000000000000000
+                Position.Y = 94.000000000000000000
+                Size.Width = 20.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claWhite
+              end
+              object vRetItensComanda: TVertScrollBox
+                Position.X = 688.000000000000000000
+                Position.Y = 136.000000000000000000
+                TabOrder = 1
+                Visible = False
+                Viewport.Width = 50.000000000000000000
+                Viewport.Height = 50.000000000000000000
+              end
+            end
+          end
+          object retSecoes: TRectangle
+            Align = Top
+            Fill.Color = claWhite
+            Size.Width = 537.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claWhite
+            object vRetSecoes: TVertScrollBox
+              Align = Client
+              Size.Width = 537.000000000000000000
+              Size.Height = 80.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Viewport.Width = 537.000000000000000000
+              Viewport.Height = 80.000000000000000000
+              object retSelected: TRectangle
+                Align = Bottom
+                Fill.Color = claNull
+                Size.Width = 5.000000000000000000
+                Size.Height = 3.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Color = claNull
+                Visible = False
+              end
+            end
+            object ShadowEffect1: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.400000005960464500
+              ShadowColor = claBlack
+            end
+          end
+        end
+        object retItensComandaInformacoes: TRectangle
+          Align = Bottom
+          Fill.Color = claWhite
+          Position.Y = 152.000000000000000000
+          Size.Width = 537.000000000000000000
+          Size.Height = 248.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claWhite
+          object retItens: TRectangle
+            Align = Client
+            Fill.Color = claWhite
+            Size.Width = 537.000000000000000000
+            Size.Height = 248.000000000000000000
+            Size.PlatformDefault = False
+            object listItensComanda: TListView
+              ItemAppearanceClassName = 'TDynamicAppearance'
+              ItemEditAppearanceClassName = 'TDynamicAppearance'
+              HeaderAppearanceClassName = 'TListHeaderObjects'
+              FooterAppearanceClassName = 'TListHeaderObjects'
+              OnUpdateObjects = listItensComandaUpdateObjects
+              Align = Client
+              Size.Width = 537.000000000000000000
+              Size.Height = 214.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              ItemAppearance.ItemHeight = 50
+              ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+                item
+                  AppearanceObjectName = 'Text1'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 785.000000000000000000
+                  Appearance.Height = 23.000000000000000000
+                  Appearance.PlaceOffset.X = 14.000000000000000000
+                  Appearance.PlaceOffset.Y = 2.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'Text2'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 129.000000000000000000
+                  Appearance.Height = 21.000000000000000000
+                  Appearance.PlaceOffset.X = 14.000000000000000000
+                  Appearance.PlaceOffset.Y = 27.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'Text3'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 129.000000000000000000
+                  Appearance.Height = 21.000000000000000000
+                  Appearance.PlaceOffset.X = 278.000000000000000000
+                  Appearance.PlaceOffset.Y = 27.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'Text4'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.Width = 36.000000000000000000
+                  Appearance.Height = 23.000000000000000000
+                  Appearance.Visible = False
+                  Appearance.PlaceOffset.X = 764.000000000000000000
+                  Appearance.PlaceOffset.Y = 25.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'Text5'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 130.000000000000000000
+                  Appearance.Height = 21.000000000000000000
+                  Appearance.PlaceOffset.X = 145.000000000000000000
+                  Appearance.PlaceOffset.Y = 27.000000000000000000
+                end
+                item
+                  AppearanceObjectName = 'Text6'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                  Appearance.TextAlign = Leading
+                  Appearance.Width = 130.000000000000000000
+                  Appearance.Height = 21.000000000000000000
+                  Appearance.PlaceOffset.X = 410.000000000000000000
+                  Appearance.PlaceOffset.Y = 27.000000000000000000
+                end>
+              ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+                item
+                  AppearanceObjectName = 'Text1'
+                  AppearanceClassName = 'TTextObjectAppearance'
+                end>
+              CanSwipeDelete = False
+              OnItemClick = listItensComandaItemClick
+              object retCabecalhoItens: TRectangle
+                Position.X = 696.000000000000000000
+                Position.Y = 112.000000000000000000
+                Size.Width = 50.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                Visible = False
+                object Line10: TLine
+                  LineType = Diagonal
+                  Position.X = 744.000000000000000000
+                  Position.Y = 136.000000000000000000
+                  Size.Width = 50.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                end
+              end
+            end
+            object Rectangle30: TRectangle
+              Align = Top
+              Fill.Color = xFF4040FF
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Position.X = 1.000000000000000000
+              Position.Y = 1.000000000000000000
+              Size.Width = 535.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFF4040FF
+              object Label30: TLabel
+                Align = Client
+                StyledSettings = []
+                Size.Width = 535.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Tahoma'
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'Itens da Comanda'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object retModalLancProduto: TRectangle
+    Align = Contents
+    Fill.Color = claBlack
+    Opacity = 0.500000000000000000
+    Size.Width = 1096.000000000000000000
+    Size.Height = 576.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object retLancamentoProduto: TRectangle
+    Fill.Color = claWhite
+    Position.X = 64.000000000000000000
+    Position.Y = 103.000000000000000000
+    Size.Width = 761.000000000000000000
+    Size.Height = 315.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle19: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Size.Width = 494.000000000000000000
+      Size.Height = 315.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object retObservacoes: TRectangle
+        Align = Bottom
+        Fill.Color = claWhite
+        Margins.Left = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Position.X = 1.000000000000000000
+        Position.Y = 180.000000000000000000
+        Size.Width = 492.000000000000000000
+        Size.Height = 75.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object vRetObservacoes: THorzScrollBox
+          Align = Client
+          Size.Width = 492.000000000000000000
+          Size.Height = 75.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 492.000000000000000000
+          Viewport.Height = 75.000000000000000000
+        end
+      end
+      object Rectangle1: TRectangle
+        Align = Bottom
+        Fill.Color = claWhitesmoke
+        Position.Y = 255.000000000000000000
+        Size.Width = 494.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        object btnDesistir: TCornerButton
+          Position.X = 251.000000000000000000
+          Position.Y = 13.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 88.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Desistir'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnDesistirClick
+        end
+        object btnConfirmar: TCornerButton
+          Position.X = 155.000000000000000000
+          Position.Y = 13.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 88.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Confirmar'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnConfirmarClick
+        end
+      end
+      object btnAddQuantidade: TCornerButton
+        Position.X = 116.000000000000000000
+        Position.Y = 55.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 35.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '+'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnAddQuantidadeClick
+      end
+      object btnRemoveQuantidade: TCornerButton
+        Position.X = 10.000000000000000000
+        Position.Y = 55.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 35.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = '-'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnRemoveQuantidadeClick
+      end
+      object label1: TLabel
+        StyledSettings = []
+        Position.X = 11.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 139.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Quantidade:'
+        TabOrder = 4
+      end
+      object Label2: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 102.000000000000000000
+        Size.Width = 481.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Gar'#231'om:'
+        TabOrder = 5
+      end
+      object Label3: TLabel
+        StyledSettings = []
+        Position.X = 224.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Valor:'
+        TabOrder = 6
+      end
+      object Label21: TLabel
+        Align = Bottom
+        StyledSettings = []
+        Position.Y = 160.000000000000000000
+        Size.Width = 494.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.HorzAlign = Center
+        Text = 'Observa'#231#245'es'
+        TabOrder = 7
+      end
+      object retProduto: TRectangle
+        Align = Top
+        Fill.Color = xFF4040FF
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Position.X = 1.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 492.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF4040FF
+        object lblNomeProduto: TLabel
+          Align = Client
+          StyledSettings = []
+          Size.Width = 492.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Tahoma'
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'NomeProduto'
+          TabOrder = 0
+        end
+      end
+      object Rectangle24: TRectangle
+        Fill.Color = claWhite
+        Position.X = 51.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 59.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        object EdtQuantidadeProduto: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          OnTap = EdtQuantidadeProdutoTap
+          Align = Client
+          TabOrder = 0
+          KeyboardType = DecimalNumberPad
+          Text = '1'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 57.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+          CharCase = ecUpperCase
+          OnClick = EdtQuantidadeProdutoClick
+          OnExit = EdtQuantidadeProdutoExit
+        end
+      end
+      object Rectangle25: TRectangle
+        Fill.Color = claWhite
+        Position.X = 224.000000000000000000
+        Position.Y = 55.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        object EdtValorProduto: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          KeyboardType = DecimalNumberPad
+          Text = '0,00'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 247.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+          CharCase = ecUpperCase
+          OnClick = EdtValorProdutoClick
+          OnExit = EdtValorProdutoExit
+        end
+      end
+      object Rectangle26: TRectangle
+        Fill.Color = claWhite
+        Position.X = 8.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 481.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        object cbGarcom: TComboBox
+          Align = Client
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 479.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+    end
+    object retAddAdicionais: TRectangle
+      Align = Right
+      Fill.Color = claWhite
+      Position.X = 496.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 315.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Rectangle21: TRectangle
+        Align = Top
+        Fill.Color = xFF4040FF
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Position.X = 1.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 263.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF4040FF
+        object lblNomeAdicionalTotal: TLabel
+          Align = Client
+          StyledSettings = []
+          Size.Width = 263.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Tahoma'
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Adicionais: R$ 0,00'
+          TabOrder = 0
+        end
+      end
+      object retAdicionais: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Size.Width = 265.000000000000000000
+        Size.Height = 284.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object vRetAdicionais: TVertScrollBox
+          Align = Client
+          Size.Width = 265.000000000000000000
+          Size.Height = 284.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 265.000000000000000000
+          Viewport.Height = 284.000000000000000000
+        end
+      end
+    end
+  end
+  object retAddIndicador: TRectangle
+    Fill.Color = claWhite
+    Position.X = 339.000000000000000000
+    Position.Y = 185.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Label4: TLabel
+      StyledSettings = []
+      Position.X = 16.000000000000000000
+      Position.Y = 42.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 11.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Indicador:'
+      TabOrder = 0
+    end
+    object Rectangle6: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Size.Width = 385.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object lblNomeIndicador: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 385.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Sem Indicador'
+        TabOrder = 0
+      end
+    end
+    object Rectangle20: TRectangle
+      Fill.Color = claWhite
+      Position.X = 16.000000000000000000
+      Position.Y = 59.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      object cbIndicadores: TComboBox
+        Align = Client
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 351.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object btnCancelarIndicador: TCornerButton
+      Position.X = 258.000000000000000000
+      Position.Y = 106.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 112.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Desistir'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnCancelarIndicadorClick
+    end
+    object btnRemoverIndicador: TCornerButton
+      Position.X = 138.000000000000000000
+      Position.Y = 106.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 112.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Remover'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnRemoverIndicadorClick
+    end
+    object btnSelecionarIndicador: TCornerButton
+      Position.X = 18.000000000000000000
+      Position.Y = 106.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 112.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Selecionar'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnSelecionarIndicadorClick
+    end
+  end
+  object retObsCancelaMesa: TRectangle
+    Fill.Color = claWhite
+    Position.X = 312.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 369.000000000000000000
+    Size.Height = 257.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle9: TRectangle
+      Align = Top
+      Fill.Color = claRed
+      Size.Width = 369.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claRed
+      object Label12: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 369.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Cancelamento da Comanda'
+        TabOrder = 0
+      end
+    end
+    object Label14: TLabel
+      Align = Client
+      StyledSettings = []
+      Size.Width = 369.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Observa'#231#227'o:'
+      TabOrder = 1
+    end
+    object mmObservacao: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      OnTap = mmObservacaoTap
+      CharCase = ecUpperCase
+      DataDetectorTypes = []
+      StyledSettings = []
+      Align = Bottom
+      Margins.Left = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 76.000000000000000000
+      Size.Width = 367.000000000000000000
+      Size.Height = 130.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      OnClick = mmObservacaoClick
+      Viewport.Width = 367.000000000000000000
+      Viewport.Height = 130.000000000000000000
+    end
+    object Rectangle13: TRectangle
+      Align = Bottom
+      Fill.Color = claWhitesmoke
+      Position.Y = 207.000000000000000000
+      Size.Width = 369.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      object btnConfirmarCancelamentoMesa: TCornerButton
+        Position.X = 93.000000000000000000
+        Position.Y = 8.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Confirmar'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnConfirmarCancelamentoMesaClick
+      end
+      object btnDesistirCancelamentoMesa: TCornerButton
+        Position.X = 189.000000000000000000
+        Position.Y = 8.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirCancelamentoMesaClick
+      end
+    end
+  end
+  object retTransferenciaComanda: TRectangle
+    Fill.Color = claWhite
+    Position.X = 168.000000000000000000
+    Position.Y = 17.000000000000000000
+    Size.Width = 632.000000000000000000
+    Size.Height = 449.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle2: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 630.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label16: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 630.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Transfer'#234'ncia da Comanda: 001'
+        TabOrder = 0
+      end
+    end
+    object label18: TLabel
+      StyledSettings = []
+      Position.X = 267.000000000000000000
+      Position.Y = 42.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Mesa de Destino:'
+      TabOrder = 1
+    end
+    object btnSelecionarMesaTransferencia: TCornerButton
+      Position.X = 387.000000000000000000
+      Position.Y = 59.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 193.000000000000000000
+      Size.Height = 43.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Selecionar Comanda'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnSelecionarMesaTransferenciaClick
+    end
+    object Rectangle4: TRectangle
+      Align = Bottom
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 110.000000000000000000
+      Size.Width = 630.000000000000000000
+      Size.Height = 286.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Line3: TLine
+        Align = Top
+        LineType = Diagonal
+        Size.Width = 630.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Rectangle15: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Size.Width = 560.000000000000000000
+        Size.Height = 285.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object vRetItensTransferencia: TVertScrollBox
+          Align = Client
+          Size.Width = 560.000000000000000000
+          Size.Height = 285.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 560.000000000000000000
+          Viewport.Height = 285.000000000000000000
+        end
+      end
+      object Rectangle16: TRectangle
+        Align = Right
+        Fill.Color = claWhite
+        Position.X = 560.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 285.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object Line5: TLine
+          Align = Left
+          LineType = Diagonal
+          Size.Width = 1.000000000000000000
+          Size.Height = 285.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Rectangle18: TRectangle
+          Align = Client
+          Fill.Color = claWhite
+          Size.Width = 69.000000000000000000
+          Size.Height = 285.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claWhite
+          object btnTransferirItens: TCornerButton
+            Align = Top
+            CornerType = Bevel
+            StyledSettings = []
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Position.X = 1.000000000000000000
+            Position.Y = 1.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 67.000000000000000000
+            Size.Height = 70.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Transferir Itens'
+            TextSettings.FontColor = claWhite
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnTransferirItensClick
+          end
+          object btnTransferirTodosItens: TCornerButton
+            Align = Top
+            StyledSettings = []
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Position.X = 1.000000000000000000
+            Position.Y = 73.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 67.000000000000000000
+            Size.Height = 70.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Transferir Tudo'
+            TextSettings.FontColor = claWhite
+            TextSettings.WordWrap = True
+            XRadius = 3.000000000000000000
+            YRadius = 3.000000000000000000
+            OnClick = btnTransferirTodosItensClick
+          end
+        end
+      end
+    end
+    object Rectangle14: TRectangle
+      Align = Bottom
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 398.000000000000000000
+      Size.Width = 630.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Line4: TLine
+        Align = Top
+        LineType = Diagonal
+        Size.Width = 630.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object btnCancelarTransferencia: TCornerButton
+        Position.X = 257.000000000000000000
+        Position.Y = 11.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 117.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Cancelar'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnCancelarTransferenciaClick
+      end
+    end
+    object Rectangle17: TRectangle
+      Fill.Color = claWhite
+      Position.X = 251.000000000000000000
+      Position.Y = 59.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Rectangle17Click
+      object EdtMesaTransferencia: TLabel
+        OnTap = EdtMesaTransferenciaTap
+        Align = Client
+        StyledSettings = []
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 127.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.HorzAlign = Center
+        TabOrder = 0
+        OnClick = EdtMesaTransferenciaClick
+      end
+    end
+    object btnMudarMesa: TCornerButton
+      Position.X = 51.000000000000000000
+      Position.Y = 59.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 193.000000000000000000
+      Size.Height = 43.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Mudar Mesa'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnMudarMesaClick
+    end
+  end
+  object retAlteraInformacoesMesa: TRectangle
+    Fill.Color = claWhite
+    Position.X = 352.000000000000000000
+    Position.Y = 89.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 257.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Label23: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 14.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Descri'#231#227'o da Comanda'
+      TabOrder = 0
+    end
+    object Rectangle22: TRectangle
+      Fill.Color = claWhite
+      Position.X = 8.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object EdtDescricaoMesa: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Size.Width = 249.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        CharCase = ecUpperCase
+        OnClick = EdtDescricaoMesaClick
+      end
+    end
+    object Label26: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'N'#250'mero de Pessoas'
+      TabOrder = 2
+    end
+    object Rectangle23: TRectangle
+      Fill.Color = claWhite
+      Position.X = 8.000000000000000000
+      Position.Y = 90.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object EdtQuantidadePessoas: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Size.Width = 249.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        CharCase = ecUpperCase
+        OnClick = EdtQuantidadePessoasClick
+      end
+    end
+    object btnConfirmarAlteraInformacoes: TCornerButton
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 136.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 249.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Confirmar'
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnConfirmarAlteraInformacoesClick
+    end
+    object btnCancelarAlteraInformacoes: TCornerButton
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 192.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 249.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Cancelar'
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnCancelarAlteraInformacoesClick
+    end
+  end
+  object retAddAdicional: TRectangle
+    Fill.Color = claWhite
+    Position.X = 360.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 249.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle28: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 191.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object lblNomeAdicional: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 191.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Adicional: '
+        TabOrder = 0
+      end
+    end
+    object btnRemoveAdicional: TCornerButton
+      Position.X = 28.000000000000000000
+      Position.Y = 67.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 35.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = '-'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnRemoveAdicionalClick
+    end
+    object btnAddAdicional: TCornerButton
+      Position.X = 131.000000000000000000
+      Position.Y = 67.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 35.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = '+'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnAddAdicionalClick
+    end
+    object Label28: TLabel
+      StyledSettings = []
+      Position.X = 27.000000000000000000
+      Position.Y = 47.000000000000000000
+      Size.Width = 139.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Quantidade:'
+      TabOrder = 3
+    end
+    object Rectangle34: TRectangle
+      Fill.Color = claWhite
+      Position.X = 67.000000000000000000
+      Position.Y = 68.000000000000000000
+      Size.Width = 59.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object EdtQuantidadeAdicional: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        OnTap = EdtQuantidadeProdutoTap
+        Align = Client
+        TabOrder = 0
+        KeyboardType = DecimalNumberPad
+        Text = '1'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.HorzAlign = Center
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        CharCase = ecUpperCase
+      end
+    end
+    object btnDesistirAddAdicional: TCornerButton
+      Position.X = 9.000000000000000000
+      Position.Y = 197.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 176.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Desistir'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnDesistirAddAdicionalClick
+    end
+    object btnConfirmarAddAdicional: TCornerButton
+      Position.X = 9.000000000000000000
+      Position.Y = 149.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 176.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Confirmar'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnConfirmarAddAdicionalClick
+    end
+    object lblTotalAdicional: TLabel
+      StyledSettings = []
+      Position.X = 9.000000000000000000
+      Position.Y = 117.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claRed
+      TextSettings.VertAlign = Leading
+      Text = 'Total: R$ 0,00'
+      TabOrder = 7
+    end
+  end
+  object retInformacoesItemConta: TRectangle
+    Fill.Color = claWhite
+    Position.X = 120.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 761.000000000000000000
+    Size.Height = 329.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle35: TRectangle
+      Align = Bottom
+      Position.Y = 279.000000000000000000
+      Size.Width = 761.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      object btnDesistirInformacaoItem: TCornerButton
+        Position.X = 200.000000000000000000
+        Position.Y = 7.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirInformacaoItemClick
+      end
+      object btnCancelarItem: TCornerButton
+        Position.X = 298.000000000000000000
+        Position.Y = 7.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 118.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Cancelar Item'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnCancelarItemClick
+      end
+    end
+    object Rectangle39: TRectangle
+      Align = Right
+      Fill.Color = claWhite
+      Margins.Right = 1.000000000000000000
+      Position.X = 567.000000000000000000
+      Position.Y = 31.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 248.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Line6: TLine
+        Align = Left
+        LineType = Diagonal
+        Size.Width = 1.000000000000000000
+        Size.Height = 248.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object vRetAdicionaisProdutoSel: TVertScrollBox
+        Align = Client
+        Size.Width = 192.000000000000000000
+        Size.Height = 248.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 192.000000000000000000
+        Viewport.Height = 248.000000000000000000
+      end
+    end
+    object Rectangle49: TRectangle
+      Align = Left
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 31.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 248.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object vRetPagamentosParciaisProduto: TVertScrollBox
+        Align = Client
+        Margins.Right = 1.000000000000000000
+        Size.Width = 175.000000000000000000
+        Size.Height = 248.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 175.000000000000000000
+        Viewport.Height = 248.000000000000000000
+        object Line9: TLine
+          Align = Right
+          LineType = Diagonal
+          Position.X = 174.000000000000000000
+          Size.Width = 1.000000000000000000
+          Size.Height = 248.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object Rectangle50: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 390.000000000000000000
+      Size.Height = 248.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Label37: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Item:'
+        TabOrder = 0
+      end
+      object Label38: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Produto:'
+        TabOrder = 1
+      end
+      object Label39: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Refer'#234'ncia:'
+        TabOrder = 2
+      end
+      object Label40: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Quantidade:'
+        TabOrder = 3
+      end
+      object Label41: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 90.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Valor:'
+        TabOrder = 4
+      end
+      object Label42: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 110.000000000000000000
+        Size.Width = 72.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Total:'
+        TabOrder = 5
+      end
+      object Label43: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 150.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Gar'#231'om:  '
+        TabOrder = 6
+      end
+      object Label44: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 170.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Observa'#231#227'o:'
+        TabOrder = 7
+      end
+      object Label45: TLabel
+        StyledSettings = []
+        Position.X = 205.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Hora Lan'#231'amento:'
+        TabOrder = 8
+      end
+      object Label46: TLabel
+        StyledSettings = []
+        Position.X = 190.000000000000000000
+        Position.Y = 90.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Total Adicionais:'
+        TabOrder = 9
+      end
+      object Label47: TLabel
+        StyledSettings = []
+        Position.X = 8.000000000000000000
+        Position.Y = 130.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Total Geral:'
+        TabOrder = 10
+      end
+      object Label5: TLabel
+        StyledSettings = []
+        Position.X = 190.000000000000000000
+        Position.Y = 110.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        Text = 'Total Parcial:'
+        TabOrder = 11
+      end
+      object lblInfoGarcom: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 150.000000000000000000
+        Size.Width = 165.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'GERAL'
+        TabOrder = 12
+      end
+      object lblInfoHoraLancamento: TLabel
+        StyledSettings = []
+        Position.X = 313.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 69.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '09:03:45'
+        TabOrder = 13
+      end
+      object lblInfoItem: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '001'
+        TabOrder = 14
+      end
+      object lblInfoObservacao: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 170.000000000000000000
+        Size.Width = 285.000000000000000000
+        Size.Height = 69.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.VertAlign = Leading
+        Text = 'SEM SAL; SEM BORDA; COM VERDURA'
+        TabOrder = 15
+      end
+      object lblInfoProduto: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 165.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Talharim '#225' matirciana'
+        TabOrder = 16
+      end
+      object lblInfoQuantidade: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '1,00'
+        TabOrder = 17
+      end
+      object lblInfoReferencia: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 165.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '001'
+        TabOrder = 18
+      end
+      object lblInfoTotal: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 110.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '17,50'
+        TabOrder = 19
+      end
+      object lblInfoTotalAdicional: TLabel
+        StyledSettings = []
+        Position.X = 305.000000000000000000
+        Position.Y = 90.000000000000000000
+        Size.Width = 69.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '17,50'
+        TabOrder = 20
+      end
+      object lblInfoTotalGeral: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 130.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '35,00'
+        TabOrder = 21
+      end
+      object lblInfoTotalParcial: TLabel
+        StyledSettings = []
+        Position.X = 305.000000000000000000
+        Position.Y = 110.000000000000000000
+        Size.Width = 69.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '17,50'
+        TabOrder = 22
+      end
+      object lblInfoValor: TLabel
+        StyledSettings = []
+        Position.X = 85.000000000000000000
+        Position.Y = 90.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = '17,50'
+        TabOrder = 23
+      end
+    end
+    object Rectangle27: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 759.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label29: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 759.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'NomeProduto'
+        TabOrder = 0
+      end
+    end
+  end
+  object retObsCancelamentoItem: TRectangle
+    Fill.Color = claWhite
+    Position.X = 144.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle37: TRectangle
+      Align = Top
+      Fill.Color = claRed
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 343.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claRed
+      object Label34: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 343.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Cancelamento do Item'
+        TabOrder = 0
+      end
+    end
+    object Rectangle38: TRectangle
+      Align = Bottom
+      Position.Y = 216.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      object btnConfirmarObsCancelItem: TCornerButton
+        Position.X = 82.000000000000000000
+        Position.Y = 6.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Confirmar'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnConfirmarObsCancelItemClick
+      end
+      object btnDesisitirObsCancelItem: TCornerButton
+        Position.X = 178.000000000000000000
+        Position.Y = 6.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesisitirObsCancelItemClick
+      end
+    end
+    object Rectangle36: TRectangle
+      Align = Bottom
+      Fill.Color = claWhite
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 325.000000000000000000
+      Size.Height = 136.000000000000000000
+      Size.PlatformDefault = False
+      object mmObservacaoCancelItem: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        CharCase = ecUpperCase
+        DataDetectorTypes = []
+        Align = Client
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 323.000000000000000000
+        Size.Height = 134.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = mmObservacaoCancelItemClick
+        Viewport.Width = 323.000000000000000000
+        Viewport.Height = 134.000000000000000000
+      end
+    end
+    object Label35: TLabel
+      Align = Client
+      StyledSettings = []
+      Size.Width = 345.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Observa'#231#227'o'
+      TabOrder = 3
+    end
+  end
+  object retSelecaoTipoPagamento: TRectangle
+    Fill.Color = claWhite
+    Position.X = 48.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 233.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle41: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 231.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label36: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 231.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Selecione'
+        TabOrder = 0
+      end
+    end
+    object btnPacialValor: TCornerButton
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 38.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 217.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Parcial Valor'
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnPacialValorClick
+    end
+    object btnPacialProduto: TCornerButton
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 102.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 217.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Parcial Produto'
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnPacialProdutoClick
+    end
+    object btnDesistirSelecaoPagamento: TCornerButton
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 166.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 217.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Desistir'
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnDesistirSelecaoPagamentoClick
+    end
+  end
+  object retPagamentoParcialValor: TRectangle
+    Fill.Color = claWhite
+    Position.X = 88.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 449.000000000000000000
+    Size.Height = 433.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle8: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 447.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label51: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 447.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Pagamento parcial valor'
+        TabOrder = 0
+      end
+    end
+    object Rectangle7: TRectangle
+      Align = Bottom
+      Position.Y = 376.000000000000000000
+      Size.Width = 449.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      object btnDesistirPagamentoParcialValor: TCornerButton
+        Position.X = 181.000000000000000000
+        Position.Y = 11.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirPagamentoParcialValorClick
+      end
+    end
+    object Rectangle11: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Size.Width = 448.000000000000000000
+      Size.Height = 333.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object VertScrollBox1: TVertScrollBox
+        Align = Client
+        Size.Width = 448.000000000000000000
+        Size.Height = 333.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 448.000000000000000000
+        Viewport.Height = 333.000000000000000000
+        object Rectangle12: TRectangle
+          Fill.Color = claWhite
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 130.000000000000000000
+          Size.Height = 100.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = Rectangle12Click
+          object Image1: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  014C49444154785EED9B314E0251188457694DAC4CBC00E7B0A1E012B624DEC0
+                  837803EE406C3901C780D091588B33BB232164050A79E29BF992D979BCFD9B37
+                  9BE591FDD9E68F184133682971CC390B26D027B43D10E778AE6AEEA03574B8F8
+                  6FF11C6BAAE505EA5BF8BE58538C5B7929EEE5C738A7E6D7281DC0D59100E4B6
+                  2400B92D09406E4B0290DB9200E4B62400B92D09406E4B0290DB9200E4B62400
+                  B92DF601DCC8091B12CFD0251F4B3F41E36EF823EFD0BC1B5E840D34853EDA4F
+                  822DA9631D9BDAC4B5EEDA706C4AF6F5EA6A17D73C1AE0F0060D213778FB3FF0
+                  C0F6F423670C59651B8416DDD09276EDD65F82508BED36981F42857985FAAEC8
+                  BE58538CEC02725B1280DC960420B72501C86D4900725B1280DC960420B72501
+                  C86D4900725B1280DC960420B7A574007C267F8A736AFE2DF6AFCE12B6A4FA7A
+                  919CDBFD6BA376AEE4F5F9A6F90207273CB0032FA7820000000049454E44AE42
+                  6082}
+                FileName = 'C:\Projetos\SIAF - Restaurante\Arquivos\IMG\Icones\add.png'
+              end>
+            Align = Client
+            Cursor = crHandPoint
+            Size.Width = 124.000000000000000000
+            Size.Height = 100.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Place
+            OnClick = Rectangle12Click
+            object Line8: TLine
+              Align = Top
+              LineType = Diagonal
+              Size.Width = 124.000000000000000000
+              Size.Height = 1.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = claGray
+            end
+          end
+          object Rectangle42: TRectangle
+            Align = Left
+            Cursor = crHandPoint
+            Fill.Color = xFF4040FF
+            Size.Width = 6.000000000000000000
+            Size.Height = 100.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF4040FF
+            OnClick = Rectangle12Click
+          end
+        end
+      end
+    end
+  end
+  object retLancPagamentoParcialValor: TRectangle
+    Fill.Color = claWhite
+    Position.X = 432.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 521.000000000000000000
+    Size.Height = 385.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle10: TRectangle
+      Align = Right
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 344.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Line7: TLine
+        Align = Left
+        LineType = Diagonal
+        Size.Width = 1.000000000000000000
+        Size.Height = 344.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object vRetAdicionaisInfoProduto: TVertScrollBox
+        Align = Client
+        Size.Width = 239.000000000000000000
+        Size.Height = 344.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 239.000000000000000000
+        Viewport.Height = 344.000000000000000000
+      end
+    end
+    object Rectangle43: TRectangle
+      Fill.Color = claWhite
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Rectangle43Click
+      object EdtLancPagParcialValor: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 263.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = Rectangle43Click
+      end
+    end
+    object Label9: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 52.000000000000000000
+      Size.Width = 257.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Valor:'
+      TabOrder = 1
+    end
+    object Rectangle44: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Size.Width = 521.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label10: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 521.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Lan'#231'amento de Pagamento Parcial Valor'
+        TabOrder = 0
+      end
+    end
+    object btnDesistirLancPagamentoParcialV: TCornerButton
+      Position.X = 66.000000000000000000
+      Position.Y = 337.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 161.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Desistir'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnDesistirLancPagamentoParcialVClick
+    end
+    object btnConfirmarLancPagParcialValor: TCornerButton
+      Position.X = 66.000000000000000000
+      Position.Y = 280.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 161.000000000000000000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Confirmar Pagamento'
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnConfirmarLancPagParcialValorClick
+    end
+    object mmHistoricoPagamentoParcialValor: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      OnTap = mmObservacaoTap
+      CharCase = ecUpperCase
+      DataDetectorTypes = []
+      StyledSettings = []
+      Margins.Left = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      OnClick = mmHistoricoPagamentoParcialValorClick
+      Viewport.Width = 265.000000000000000000
+      Viewport.Height = 145.000000000000000000
+    end
+    object Label7: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 108.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Historico:'
+      TabOrder = 6
+    end
+  end
+  object retDeletaPagamentoParcial: TRectangle
+    Fill.Color = claWhite
+    Position.X = 464.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 177.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle40: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 199.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label512312312312321: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 199.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Selecione'
+        TabOrder = 0
+      end
+    end
+    object btnRemoverPagamentoParcial: TCornerButton
+      StyledSettings = []
+      ModalResult = 10
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 39.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 169.000000000000000000
+      Size.Height = 58.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Remover'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnRemoverPagamentoParcialClick
+    end
+    object btnDesistirRemoverPagamentoParcial: TCornerButton
+      StyledSettings = []
+      ModalResult = 10
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 103.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 169.000000000000000000
+      Size.Height = 58.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Desistir'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = True
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnDesistirRemoverPagamentoParcialClick
+    end
+  end
+  object retPagamentoParcialProduto: TRectangle
+    Fill.Color = claWhite
+    Position.X = 300.000000000000000000
+    Position.Y = 190.000000000000000000
+    Size.Width = 493.000000000000000000
+    Size.Height = 361.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle45: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Size.Width = 493.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label6: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 493.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'default'
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Pagamento parcial produto'
+        TabOrder = 0
+      end
+    end
+    object vRetProdutosParcial: TVertScrollBox
+      Align = Client
+      Size.Width = 493.000000000000000000
+      Size.Height = 270.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 493.000000000000000000
+      Viewport.Height = 270.000000000000000000
+      object retBottomPagamentoParcialProduto: TRectangle
+        Fill.Color = claWhite
+        Position.X = 208.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+      end
+    end
+    object Rectangle46: TRectangle
+      Align = Bottom
+      Position.Y = 311.000000000000000000
+      Size.Width = 493.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      object btnDesistirPagamentoParcialProduto: TCornerButton
+        Position.X = 323.000000000000000000
+        Position.Y = 7.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Sair'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirPagamentoParcialProdutoClick
+      end
+      object btnConfirmarpagamentoParcialProduto: TCornerButton
+        Position.X = 82.000000000000000000
+        Position.Y = 7.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 233.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Confirmar Pagamento Parcial'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnConfirmarpagamentoParcialProdutoClick
+      end
+    end
+  end
+  object retInformacoes: TRectangle
+    Fill.Color = claWhite
+    Position.X = 440.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 377.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Label11: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Comanda:'
+      TabOrder = 0
+    end
+    object Label13: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Abertura:'
+      TabOrder = 1
+    end
+    object Label15: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 76.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Contador de mesa:'
+      TabOrder = 2
+    end
+    object Label17: TLabel
+      StyledSettings = []
+      Position.X = 7.000000000000000000
+      Position.Y = 133.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Descri'#231#227'o da mesa:'
+      TabOrder = 3
+    end
+    object Label19: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Indicador:'
+      TabOrder = 4
+    end
+    object Label27: TLabel
+      StyledSettings = []
+      Position.X = 8.000000000000000000
+      Position.Y = 114.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Pessoas:'
+      TabOrder = 5
+    end
+    object lblAbertura: TLabel
+      StyledSettings = []
+      Position.X = 130.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 143.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '24/11/2018 10:17'
+      TabOrder = 6
+    end
+    object lblContadorMesa: TLabel
+      StyledSettings = []
+      Position.X = 130.000000000000000000
+      Position.Y = 77.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '187'
+      TabOrder = 7
+    end
+    object lblDescricaoMesa: TLabel
+      StyledSettings = []
+      Position.X = 129.000000000000000000
+      Position.Y = 133.000000000000000000
+      Size.Width = 144.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      Text = 'ANIVERSARIO DE FULANO'
+      TabOrder = 8
+    end
+    object lblMesa: TLabel
+      StyledSettings = []
+      Position.X = 130.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '001'
+      TabOrder = 9
+    end
+    object lblNomeIndicadorStatus: TLabel
+      StyledSettings = []
+      Position.X = 130.000000000000000000
+      Position.Y = 97.000000000000000000
+      Size.Width = 143.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Sem indicador'
+      TabOrder = 10
+    end
+    object lblTotalPessoas: TLabel
+      StyledSettings = []
+      Position.X = 130.000000000000000000
+      Position.Y = 114.000000000000000000
+      Size.Width = 143.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '0'
+      TabOrder = 11
+    end
+    object Label20: TLabel
+      StyledSettings = []
+      Position.X = 59.000000000000000000
+      Position.Y = 229.000000000000000000
+      Size.Width = 95.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Total Liqu'#237'do:'
+      TabOrder = 12
+    end
+    object Label22: TLabel
+      StyledSettings = []
+      Position.X = 59.000000000000000000
+      Position.Y = 246.000000000000000000
+      Size.Width = 95.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Total parcial:'
+      TabOrder = 13
+    end
+    object Label24: TLabel
+      StyledSettings = []
+      Position.X = 59.000000000000000000
+      Position.Y = 262.000000000000000000
+      Size.Width = 95.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Taxa servi'#231'o:'
+      TabOrder = 14
+    end
+    object Label25: TLabel
+      StyledSettings = []
+      Position.X = 46.000000000000000000
+      Position.Y = 289.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Total:'
+      TabOrder = 15
+    end
+    object lblTaxaServico: TLabel
+      StyledSettings = []
+      Position.X = 153.000000000000000000
+      Position.Y = 262.000000000000000000
+      Size.Width = 59.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = '19,00'
+      TabOrder = 16
+    end
+    object lblTotal: TLabel
+      StyledSettings = []
+      Position.X = 105.000000000000000000
+      Position.Y = 289.000000000000000000
+      Size.Width = 136.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Trailing
+      Text = '169,00'
+      TabOrder = 17
+    end
+    object lblTotalLiquido: TLabel
+      StyledSettings = []
+      Position.X = 161.000000000000000000
+      Position.Y = 229.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = '190,00'
+      TabOrder = 18
+    end
+    object lblTotalParcial: TLabel
+      StyledSettings = []
+      Position.X = 161.000000000000000000
+      Position.Y = 246.000000000000000000
+      Size.Width = 51.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = '30,00'
+      TabOrder = 19
+    end
+    object Rectangle5: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 279.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label48: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 279.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Informa'#231#245'es da Comanda'
+        TabOrder = 0
+      end
+    end
+    object Rectangle29: TRectangle
+      Align = Bottom
+      Position.Y = 327.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      object btnSairInformacoesMesa: TCornerButton
+        Position.X = 97.000000000000000000
+        Position.Y = 8.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Sair'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnSairInformacoesMesaClick
+      end
+    end
+  end
+  object retFinalizacaoVenda: TRectangle
+    Fill.Color = claWhite
+    Position.X = 88.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 857.000000000000000000
+    Size.Height = 441.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle51: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 855.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label49: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 855.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Finaliza'#231#227'o da Comanda: 001'
+        TabOrder = 0
+      end
+    end
+    object Rectangle52: TRectangle
+      Align = Bottom
+      Position.Y = 391.000000000000000000
+      Size.Width = 857.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      object btnFinalizarComanda: TCornerButton
+        Position.X = 238.000000000000000000
+        Position.Y = 8.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 220.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Confirmar Pagamento'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnFinalizarComandaClick
+      end
+      object btnDesistirFinalizacaoComanda: TCornerButton
+        Position.X = 466.000000000000000000
+        Position.Y = 8.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirFinalizacaoComandaClick
+      end
+    end
+    object Rectangle63: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 478.000000000000000000
+      Size.Height = 357.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Rectangle54: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Margins.Left = 1.000000000000000000
+        Size.Width = 477.000000000000000000
+        Size.Height = 357.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+        object Rectangle56: TRectangle
+          Align = Client
+          Fill.Color = claWhite
+          Size.Width = 477.000000000000000000
+          Size.Height = 357.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claWhite
+          object Label50: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 6.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'SubTotal: '
+            TabOrder = 1
+          end
+          object Label52: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 30.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = '(+) Total Servi'#231'o: '
+            TabOrder = 2
+          end
+          object Label53: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 200.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claRed
+            TextSettings.HorzAlign = Trailing
+            Text = 'Total '#224' Pagar: '
+            TabOrder = 3
+          end
+          object Label54: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 55.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = '(-) Total Parcial: '
+            TabOrder = 4
+          end
+          object lblSubTotalFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'R$ 100,00'
+            TabOrder = 5
+          end
+          object Label56: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 79.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = '(-) Desconto: '
+            TabOrder = 6
+          end
+          object lblDescontoFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 79.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'R$ 20,00'
+            TabOrder = 7
+          end
+          object lblTotalServicoFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'R$ 10,00'
+            TabOrder = 8
+          end
+          object lblTotalParcialFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 55.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'R$ 50,00'
+            TabOrder = 9
+          end
+          object lblTotalGeralFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 200.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claRed
+            Text = 'R$ 40,00'
+            TabOrder = 10
+          end
+          object Label60: TLabel
+            StyledSettings = []
+            Position.X = 8.000000000000000000
+            Position.Y = 300.000000000000000000
+            Size.Width = 113.000000000000000000
+            Size.Height = 29.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.VertAlign = Leading
+            TextSettings.Trimming = None
+            Text = 'Descri'#231#227'o da Comanda:'
+            TabOrder = 12
+          end
+          object Label61: TLabel
+            StyledSettings = []
+            Position.X = 8.000000000000000000
+            Position.Y = 260.000000000000000000
+            Size.Width = 113.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Indicador:'
+            TabOrder = 13
+          end
+          object Label66: TLabel
+            StyledSettings = []
+            Position.X = 8.000000000000000000
+            Position.Y = 280.000000000000000000
+            Size.Width = 113.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Pessoas:'
+            TabOrder = 14
+          end
+          object lblAberturaFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 130.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 143.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = '24/11/2018 10:17'
+            TabOrder = 15
+          end
+          object lblDescricaoMesaFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 130.000000000000000000
+            Position.Y = 300.000000000000000000
+            Size.Width = 144.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.VertAlign = Leading
+            Text = 'ANIVERSARIO DE FULANO'
+            TabOrder = 16
+          end
+          object lblIndicadorFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 130.000000000000000000
+            Position.Y = 260.000000000000000000
+            Size.Width = 143.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Sem indicador'
+            TabOrder = 17
+          end
+          object lblPessoasFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 130.000000000000000000
+            Position.Y = 280.000000000000000000
+            Size.Width = 143.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = '0'
+            TabOrder = 18
+          end
+          object Label58: TLabel
+            StyledSettings = []
+            Position.X = 8.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 113.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Abertura:'
+            TabOrder = 11
+          end
+          object lblTotalPessoaFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 102.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'R$ 0,00'
+            TabOrder = 19
+          end
+          object Label59: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 102.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'Total por Pessoa: '
+            TabOrder = 20
+          end
+          object Label65: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 178.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.FontColor = claGreen
+            TextSettings.HorzAlign = Trailing
+            Text = 'Total Pago:'
+            TabOrder = 21
+          end
+          object lblTotalPagoFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 178.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claGreen
+            Text = 'R$ 0,00'
+            TabOrder = 22
+          end
+          object Label67: TLabel
+            StyledSettings = []
+            Position.X = 12.000000000000000000
+            Position.Y = 126.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.FontColor = claBlue
+            TextSettings.HorzAlign = Trailing
+            Text = 'Valor de Troco:'
+            TabOrder = 23
+          end
+          object lblValorTrocoFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 126.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claBlue
+            Text = 'R$ 0,00'
+            TabOrder = 24
+          end
+          object lblTGeralFinalizacao: TLabel
+            StyledSettings = []
+            Position.X = 147.000000000000000000
+            Position.Y = 155.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'R$ 40,00'
+            TabOrder = 25
+          end
+          object Label76: TLabel
+            StyledSettings = []
+            Position.X = 11.000000000000000000
+            Position.Y = 155.000000000000000000
+            TextSettings.Font.Family = 'Tahoma'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'Total Geral:'
+            TabOrder = 26
+          end
+          object Label75: TLabel
+            StyledSettings = []
+            Position.X = 284.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 53.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Cliente:'
+            TabOrder = 27
+          end
+          object Label77: TLabel
+            StyledSettings = []
+            Position.X = 284.000000000000000000
+            Position.Y = 277.000000000000000000
+            Size.Width = 53.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Tipo Venda:'
+            TabOrder = 28
+          end
+          object lblClienteFinalizacaoVenda: TLabel
+            StyledSettings = []
+            Position.X = 335.000000000000000000
+            Position.Y = 237.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.VertAlign = Leading
+            Text = 'CLIENTES A VISTA'
+            TabOrder = 29
+          end
+          object lblTipoVendaFinalizacaoVenda: TLabel
+            StyledSettings = []
+            Position.X = 335.000000000000000000
+            Position.Y = 285.000000000000000000
+            Size.Width = 126.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.VertAlign = Leading
+            Text = #192' VISTA'
+            TabOrder = 30
+          end
+        end
+        object Line15: TLine
+          LineType = Diagonal
+          Position.Y = 230.000000000000000000
+          Size.Width = 481.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object Rectangle53: TRectangle
+      Align = Right
+      Fill.Color = claWhite
+      Position.X = 608.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 357.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Line2213: TLine
+        Align = Left
+        LineType = Diagonal
+        Position.Y = 25.000000000000000000
+        Size.Width = 1.000000000000000000
+        Size.Height = 332.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object vRetFormasPagamentoFinalizacao: TVertScrollBox
+        Align = Client
+        Size.Width = 248.000000000000000000
+        Size.Height = 332.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 248.000000000000000000
+        Viewport.Height = 332.000000000000000000
+      end
+      object Rectangle55: TRectangle
+        Align = Top
+        Fill.Color = xFF4040FF
+        Size.Width = 249.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF4040FF
+        object Label55: TLabel
+          Align = Client
+          StyledSettings = []
+          Size.Width = 249.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Tahoma'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Formas de pagamento'
+          TabOrder = 0
+        end
+      end
+    end
+    object Rectangle64: TRectangle
+      Align = Left
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 35.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 356.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object btnAcrecimoFinalizacao: TCornerButton
+        Position.X = 5.000000000000000000
+        Position.Y = 75.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 115.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Acr'#233'scimo'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnAcrecimoFinalizacaoClick
+      end
+      object btnAlterarInformacoesFinalizacao: TCornerButton
+        Position.X = 5.000000000000000000
+        Position.Y = 141.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 115.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Alterar '#13#10'Informa'#231#245'es'
+        TextSettings.WordWrap = True
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnAlterarInformacoesFinalizacaoClick
+      end
+      object btnDescontoFinalizacao: TCornerButton
+        Position.X = 5.000000000000000000
+        Position.Y = 10.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 115.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Desconto'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDescontoFinalizacaoClick
+      end
+      object Line2: TLine
+        Align = Right
+        LineType = Diagonal
+        Position.X = 128.000000000000000000
+        Size.Width = 1.000000000000000000
+        Size.Height = 356.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object btnAlterarDadosVendaFinalizacao: TCornerButton
+        Position.X = 5.000000000000000000
+        Position.Y = 207.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 115.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Alterar Dados Venda'
+        TextSettings.WordWrap = True
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnAlterarDadosVendaFinalizacaoClick
+      end
+    end
+  end
+  object retFormasPagamentoParcialProduto: TRectangle
+    Fill.Color = claWhite
+    Position.X = 200.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle48: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Size.Width = 241.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label8: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 241.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'default'
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Selecione a forma de Pagamento'
+        TabOrder = 0
+      end
+    end
+    object Rectangle47: TRectangle
+      Align = Bottom
+      Position.Y = 328.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      object btnConfirmarSelecaoFormaPagamento: TCornerButton
+        Position.X = 25.000000000000000000
+        Position.Y = 4.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 190.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Confirmar'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnConfirmarSelecaoFormaPagamentoClick
+      end
+      object btnDesistirSelecaoFormaPagamento: TCornerButton
+        Position.X = 25.000000000000000000
+        Position.Y = 42.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 190.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirSelecaoFormaPagamentoClick
+      end
+    end
+    object vRetFormasPagamento: TVertScrollBox
+      Align = Client
+      Size.Width = 241.000000000000000000
+      Size.Height = 255.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Viewport.Width = 241.000000000000000000
+      Viewport.Height = 255.000000000000000000
+    end
+    object Rectangle57: TRectangle
+      Align = Top
+      Fill.Color = claRed
+      Position.Y = 41.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      object lblTotalFormasPagamentoParcialProduto: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 241.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'default'
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Total: R$ 0,00'
+        TabOrder = 0
+      end
+    end
+  end
+  object retLancamentoDescAcresFinalizacao: TRectangle
+    Fill.Color = claWhite
+    Position.X = 600.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 273.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle58: TRectangle
+      Align = Top
+      Fill.Color = claGreen
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 199.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+      object Label57: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 199.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Desconto'
+        TabOrder = 0
+      end
+    end
+    object btnConfirmarDescAcresFinalizacao: TCornerButton
+      Position.X = 7.000000000000000000
+      Position.Y = 190.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 186.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Confirmar'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnConfirmarDescAcresFinalizacaoClick
+    end
+    object Rectangle59: TRectangle
+      Fill.Color = claWhite
+      Position.X = 8.000000000000000000
+      Position.Y = 130.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      object EdtDescAcresFinalizacao: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = '0,00'
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Position.X = 1.000000000000000000
+        Position.Y = 1.000000000000000000
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 183.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        OnClick = EdtDescAcresFinalizacaoClick
+        OnExit = EdtDescAcresFinalizacaoExit
+      end
+    end
+    object btnDesistirDescAcresFinalizacao: TCornerButton
+      Position.X = 7.000000000000000000
+      Position.Y = 230.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 186.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Desistir'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnDesistirDescAcresFinalizacaoClick
+    end
+    object Rectangle65: TRectangle
+      Fill.Color = claWhite
+      Position.X = 8.000000000000000000
+      Position.Y = 55.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      object EdtDescAcresPercentualFinalizacao: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = '0,00'
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Position.X = 1.000000000000000000
+        Position.Y = 1.000000000000000000
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 183.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        OnClick = EdtDescAcresPercentualFinalizacaoClick
+        OnExit = EdtDescAcresPercentualFinalizacaoExit
+      end
+    end
+    object Label63: TLabel
+      StyledSettings = []
+      Position.X = 9.000000000000000000
+      Position.Y = 36.000000000000000000
+      Size.Width = 184.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Percentual %'
+      TabOrder = 5
+    end
+    object Label64: TLabel
+      StyledSettings = []
+      Position.X = 9.000000000000000000
+      Position.Y = 110.000000000000000000
+      Size.Width = 184.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Valor R$'
+      TabOrder = 6
+    end
+  end
+  object retLancamentoContasReceberCartao: TRectangle
+    Fill.Color = claWhite
+    Position.X = 40.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 929.000000000000000000
+    Size.Height = 433.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle66: TRectangle
+      Align = Top
+      Fill.Color = xFF4040FF
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 927.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF4040FF
+      object Label68: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 927.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Lan'#231'amento de Cart'#227'o'
+        TabOrder = 0
+      end
+    end
+    object Label69: TLabel
+      StyledSettings = []
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 657.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      Text = 'Administradora de Cart'#227'o'
+      TabOrder = 1
+    end
+    object Rectangle67: TRectangle
+      Fill.Color = claWhite
+      Position.X = 16.000000000000000000
+      Position.Y = 61.000000000000000000
+      Size.Width = 657.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object cbAdministradorasCartao: TComboBox
+        Align = Client
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 655.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnChange = cbAdministradorasCartaoChange
+      end
+    end
+    object Label70: TLabel
+      StyledSettings = []
+      Position.X = 16.000000000000000000
+      Position.Y = 103.000000000000000000
+      Size.Width = 657.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      Text = 'Bandeiras'
+      TabOrder = 3
+    end
+    object Rectangle68: TRectangle
+      Fill.Color = claWhite
+      Position.X = 16.000000000000000000
+      Position.Y = 123.000000000000000000
+      Size.Width = 657.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object cbBandeirasCartao: TComboBox
+        Align = Client
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 655.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object Rectangle69: TRectangle
+      Align = Bottom
+      Position.Y = 376.000000000000000000
+      Size.Width = 929.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      object btnConfirmaLancamentosCartao: TCornerButton
+        Position.X = 277.000000000000000000
+        Position.Y = 11.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 279.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Gravar Lan'#231'amento de Cart'#227'o'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnConfirmaLancamentosCartaoClick
+      end
+      object btnDesistirLancamentoCartao: TCornerButton
+        Position.X = 564.000000000000000000
+        Position.Y = 11.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 88.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Sair'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirLancamentoCartaoClick
+      end
+    end
+    object Label71: TLabel
+      StyledSettings = []
+      Position.X = 16.000000000000000000
+      Position.Y = 162.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Parcelas'
+      TabOrder = 6
+    end
+    object btnRemoveParcelas: TCornerButton
+      Position.X = 17.000000000000000000
+      Position.Y = 182.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 35.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = '-'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnRemoveParcelasClick
+    end
+    object btnAddParcelas: TCornerButton
+      Position.X = 110.000000000000000000
+      Position.Y = 182.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 35.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = '+'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnAddParcelasClick
+    end
+    object Label72: TLabel
+      StyledSettings = []
+      Position.X = 168.000000000000000000
+      Position.Y = 162.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      Text = 'Valor'
+      TabOrder = 9
+    end
+    object lblParcelasCartao: TLabel
+      StyledSettings = []
+      Position.X = 55.000000000000000000
+      Position.Y = 183.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = '1'
+      TabOrder = 10
+    end
+    object Rectangle70: TRectangle
+      Fill.Color = claWhite
+      Position.X = 168.000000000000000000
+      Position.Y = 183.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object EdtValorLancamentoCartao: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Text = '0,00'
+        TextSettings.HorzAlign = Trailing
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 183.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        OnClick = EdtValorLancamentoCartaoClick
+      end
+    end
+    object Label73: TLabel
+      StyledSettings = []
+      Position.X = 360.000000000000000000
+      Position.Y = 162.000000000000000000
+      Size.Width = 313.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      Text = 'N'#250'mero de Autoriza'#231#227'o'
+      TabOrder = 12
+    end
+    object Rectangle71: TRectangle
+      Fill.Color = claWhite
+      Position.X = 360.000000000000000000
+      Position.Y = 183.000000000000000000
+      Size.Width = 313.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object EdtNumeroAutorizacao: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        TextSettings.HorzAlign = Trailing
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 311.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        OnClick = EdtNumeroAutorizacaoClick
+      end
+    end
+    object Label74: TLabel
+      StyledSettings = []
+      Position.X = 16.000000000000000000
+      Position.Y = 226.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      Text = 'Observa'#231#227'o'
+      TabOrder = 14
+    end
+    object Rectangle72: TRectangle
+      Fill.Color = claWhite
+      Position.X = 16.000000000000000000
+      Position.Y = 247.000000000000000000
+      Size.Width = 657.000000000000000000
+      Size.Height = 122.000000000000000000
+      Size.PlatformDefault = False
+      object mmObservacaoLancamentoCartao: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        CharCase = ecUpperCase
+        DataDetectorTypes = []
+        StyledSettings = []
+        Align = Client
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 655.000000000000000000
+        Size.Height = 120.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = mmObservacaoLancamentoCartaoClick
+        Viewport.Width = 655.000000000000000000
+        Viewport.Height = 120.000000000000000000
+      end
+    end
+    object retLancamentosCartoes: TRectangle
+      Align = Right
+      Fill.Color = claWhite
+      Margins.Right = 1.000000000000000000
+      Position.X = 687.000000000000000000
+      Position.Y = 34.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 342.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object vRetLancamentosCartoes: TVertScrollBox
+        Align = Client
+        Size.Width = 240.000000000000000000
+        Size.Height = 342.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 240.000000000000000000
+        Viewport.Height = 342.000000000000000000
+      end
+      object Line16: TLine
+        Align = Left
+        LineType = Diagonal
+        Size.Width = 1.000000000000000000
+        Size.Height = 342.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object retStatusEnvioFiscal: TRectangle
+    Fill.Color = claWhite
+    Position.X = 251.000000000000000000
+    Position.Y = 163.000000000000000000
+    Size.Width = 577.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object lblStatusEnvioFiscal: TLabel
+      Align = MostBottom
+      StyledSettings = []
+      Position.Y = 160.000000000000000000
+      Size.Width = 577.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Arial'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'GERANDO XML DO DOCUMENTO FISCAL, AGUARDE...'
+      TabOrder = 0
+    end
+    object Image2: TImage
+      MultiResBitmap.Height = 64
+      MultiResBitmap.Width = 64
+      MultiResBitmap = <
+        item
+          Width = 64
+          Height = 64
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+            DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            05AB49444154785EE59B4B685C5518C7BF73EEA441D39285A696B8F08182B870
+            E163539B9A367621B40A6A8C1621A8A8385DB91097EA52445C6582852AA24D9A
+            A60AD6425736ADF5B1688BDA851BC52AE2109B440D6D2C69E69CE3F99FF9667A
+            93CCE33E66E6DE497E30CCFDCE04EEF9FF73EE797E575093C94E0D6ED4C2DBE9
+            09BA5D0BEAB545BDF6A6BDA4EDE7AA8B8936509E24E50DD96FFB9186F2CAD0AF
+            D2A813B91D9397DDDF3489A618F0F2B74FDE2C97327B048947E705EDEC26EAE4
+            9F42314FB4D86DE8842173547714BE787FEB913FF9A786D130035E3ABBFB7A6F
+            A12B4B2487C46F741FDDD660732F9031B7D239223DA1BA1672FBEF3FF61FFF12
+            8BD8951C3C3CE86DBE29F3DC92A6B7321E37E926535094EF90F4C6C5BF0A1F4E
+            3E35A9B83812B10CD8F7D5DEDD46E9B7C9137773516B51E627E1C9D747B68F1D
+            E392D0443220FBCDDE5B68497D44523EC445C9A2F529EAF086730F8EFDCE2581
+            096D40F6F433DBD4227DE66DA01E2E4A05EA2ACD789DF478AE6FFC6B2E0A84E4
+            EF40644F3FFD3C15E8CBB48907AE4EB66EAE8E2108D402D0D1DDB039F38E94F4
+            2A17A51AADE9BDB98B85D7827490750D70E2B7789F4A128F71515BA0C97C3E37
+            AD9EA86742DD47C0FDE7DB4C3C409D51770EAB52B305B8E7C988031CB627C2BC
+            90EB3BF40147ABA86A007A7B742AE4D9997A3BA3EC8A234303D546878A06609C
+            5757CC9934F6F6517043E475E2814AF384CA7D809DE4AC15F1C069C1C4AD02AB
+            0CC0F4363533BC466235396D2B586600863C37B75FA3401B3472E85866005675
+            892D6C227041E5355F06C36A731A7D943B41ACE7E9D2A69F5BB5A48D8B217350
+            6A3162241DB76177B1B43E584AD3A64B7796F613CA2D009B19ED247E765A0D8F
+            F48F7F67B4DAA548FFCB3FD5051A8B1B37457C8F801CE28B5453125F9AE28EF6
+            1F3E93912294097EADCE00ECE1B96DAC94B3527C89916D87CE4AE13D4C8B8BFF
+            70514DA0159A71ED0CC00666C3F7F01A4C35F12546FBC6CE5147E7B31CD6C66A
+            759A2DCE00ECDEE23BADD4130FB253835B8C54EF7258979266817DFB792F331B
+            75EBBAD90416EF892941DE5D5C5417B7E5AE0A37DA91C48BBC6FDF6C9A251E40
+            33B44B9CD87059AA68A6F812D06E5B40FAC6FE568807D08E4E305506B44A3CD3
+            2BEDD817D7803F706CC5D7B168B1788CFBB605E094362A8ACEDBB9F5BD765CDD
+            17D784568B7758EDB27C441D12A3E9C702D1C0FE1DE3B3B9EDE3A3714C48443C
+            B0DA7D6B81E028A37FB03329279E8B28AA09898967A44B4E08C7F7850E3530B2
+            EBE3398ECB84352169F1D02EAD05A10CD0DABC7960EB91BF395C45501312170F
+            AC76696B19CA802B521C745BE635A867422AC45BA01D7D402803BA88362E183A
+            1ED584B48867F21209491C0426AA0929134FD02E918DC57128429BA0E9933489
+            07D01E7B39BC4074B94BD02361131356D26AF1E5E530F2F0908AC6E5A109DA12
+            6AD16AF1009AA1DD4D84ECB379D49546248E0949880725CDCE002421069DBC54
+            238A0949898756A7D9E20C4006663109311E614C484CBC055A4B59A7BEB5809E
+            E08B5804312149F145AE692D1B80F453776CD4006A9990B4786884560EAF1980
+            B332A49F72189B4A2624FF9F2782467F9EF1B2C3101C1DF7F478E71B79425C9A
+            2750A1F04BD2E2915A3B33A3EEF14FC6569D06B9FC5F32AE876C1430A193CC74
+            86C41D5C940882C49E9579C5158FC3B227874EAEB92C11AD4FE5FA27FA392AE3
+            1B057C7478C3482CE2A8ED715AAC260E9751D100645321F1D8A598B53B56834B
+            A2AE92495EB90558DCE226635EE1B07DB11A6A2DD4AA1A00906189C4630EDB0E
+            D4BD569628A8690040D635128F396C1B5CB2B4AD3B8755A96B00C64C645DB753
+            4B70E9F20132C541C561B01AC51726C4686AF3875D5E309EF9DACDDE4F280300
+            A6B6EBF69519801B20F118130B2E4A1E5B17970C1D615B2E740BF0B3165E9B0B
+            DD02FCE0C6585C08432F366A291D04DC0BF7C4BDE38807B15A809F75FBEA6C25
+            D6E5CBD3D5C8A6FAF579A2FF019A0D8B17CEA541CF0000000049454E44AE4260
+            82}
+          FileName = 'C:\Projetos\SIAF - Restaurante\Arquivos\IMG\Icones\0013.png'
+        end>
+      Position.X = 225.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 128.000000000000000000
+      Size.Height = 128.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Center
+    end
+  end
+  object retInserirValorFormaPagamento: TRectangle
+    Fill.Color = claWhite
+    Position.X = 464.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle61: TRectangle
+      Align = Top
+      Fill.Color = claGreen
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 223.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGreen
+      object Label62: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 223.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'DINHEIRO:'
+        TabOrder = 0
+      end
+    end
+    object Rectangle60: TRectangle
+      Align = Bottom
+      Position.Y = 104.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      object btnConfirmarValor: TCornerButton
+        Position.X = 10.000000000000000000
+        Position.Y = 7.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 204.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Confirmar Valor'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnConfirmarValorClick
+      end
+      object btnDesistirValor: TCornerButton
+        Position.X = 10.000000000000000000
+        Position.Y = 47.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 204.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirValorClick
+      end
+    end
+    object Label78: TLabel
+      StyledSettings = []
+      Position.X = 18.000000000000000000
+      Position.Y = 37.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      Text = 'Valor'
+      TabOrder = 0
+    end
+    object Rectangle62: TRectangle
+      Fill.Color = claWhite
+      Position.X = 19.000000000000000000
+      Position.Y = 57.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object EdtValorFormaPagamento: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Text = '0,00'
+        TextSettings.HorzAlign = Trailing
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 183.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        OnClick = EdtValorFormaPagamentoClick
+      end
+    end
+  end
+  object retLancamentoQuantidadeTransferencia: TRectangle
+    Fill.Color = claWhite
+    Position.X = 395.000000000000000000
+    Position.Y = 203.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 170.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle74: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Size.Width = 303.000000000000000000
+      Size.Height = 170.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object Rectangle76: TRectangle
+        Align = Bottom
+        Fill.Color = claWhitesmoke
+        Position.Y = 110.000000000000000000
+        Size.Width = 303.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        object btnDesistirQuantidadeTransferencia: TCornerButton
+          Position.X = 155.000000000000000000
+          Position.Y = 13.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 88.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Desistir'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnDesistirQuantidadeTransferenciaClick
+        end
+        object btnConfirmarQuantidadeTransferencia: TCornerButton
+          Position.X = 59.000000000000000000
+          Position.Y = 13.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 88.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Confirmar'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnConfirmarQuantidadeTransferenciaClick
+        end
+      end
+      object btnAddQuantidadeProdutoTransferencia: TCornerButton
+        Position.X = 252.000000000000000000
+        Position.Y = 55.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 35.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '+'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnAddQuantidadeProdutoTransferenciaClick
+      end
+      object btnRemoveQuantidadeProdutoTransferencia: TCornerButton
+        Position.X = 10.000000000000000000
+        Position.Y = 55.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 35.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = '-'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnRemoveQuantidadeProdutoTransferenciaClick
+      end
+      object Label79: TLabel
+        StyledSettings = []
+        Position.X = 51.000000000000000000
+        Position.Y = 35.000000000000000000
+        Size.Width = 190.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Quantidade:'
+        TabOrder = 4
+      end
+      object Rectangle77: TRectangle
+        Align = Top
+        Fill.Color = xFF4040FF
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Position.X = 1.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 301.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF4040FF
+        object Label83: TLabel
+          Align = Client
+          StyledSettings = []
+          Size.Width = 301.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Tahoma'
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'NomeProduto'
+          TabOrder = 0
+        end
+      end
+      object Rectangle78: TRectangle
+        Fill.Color = claWhite
+        Position.X = 51.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 190.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        object EdtQuantidadeProdutoTransferencia: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          OnTap = EdtQuantidadeProdutoTransferenciaTap
+          Align = Client
+          TabOrder = 0
+          KeyboardType = DecimalNumberPad
+          Text = '1'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Margins.Left = 1.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Margins.Right = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 188.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+          CharCase = ecUpperCase
+          OnClick = EdtQuantidadeProdutoTransferenciaClick
+        end
+      end
+    end
+  end
+  object retConsultaProduto: TRectangle
+    Fill.Color = claWhite
+    Position.X = 328.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 489.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    object Rectangle75: TRectangle
+      Align = Top
+      Fill.Color = claBlack
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Position.X = 1.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 487.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      object Label80: TLabel
+        Align = Client
+        StyledSettings = []
+        Size.Width = 487.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Tahoma'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'BUSCAR PRODUTOS'
+        TabOrder = 0
+      end
+    end
+    object Rectangle79: TRectangle
+      Align = Bottom
+      Position.Y = 104.000000000000000000
+      Size.Width = 489.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      object btnBuscarProdutos: TCornerButton
+        Position.X = 35.000000000000000000
+        Position.Y = 7.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 204.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Buscar'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnBuscarProdutosClick
+      end
+      object btnDesistirBuscaProdutos: TCornerButton
+        Position.X = 251.000000000000000000
+        Position.Y = 7.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 204.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Desistir'
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = btnDesistirBuscaProdutosClick
+      end
+    end
+    object Label81: TLabel
+      StyledSettings = []
+      Position.X = 18.000000000000000000
+      Position.Y = 37.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 13.000000000000000000
+      Text = 'Pesquisa:'
+      TabOrder = 0
+    end
+    object Rectangle80: TRectangle
+      Fill.Color = claWhite
+      Position.X = 19.000000000000000000
+      Position.Y = 57.000000000000000000
+      Size.Width = 454.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      object EdtBuscaProduto: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 452.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Pesquisar Produtos'
+        StyledSettings = []
+        CharCase = ecUpperCase
+        OnClick = EdtBuscaProdutoClick
+      end
+    end
+  end
+end

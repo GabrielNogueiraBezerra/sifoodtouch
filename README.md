@@ -1,2 +1,2 @@
 # sifoodtouch
-Projeto de sistema touch screen para restaurantes e bares
+Sistema touch screen para gerenciamento de bares e restaurantes
